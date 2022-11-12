@@ -88,7 +88,7 @@ navbar
 nav {
   width: 100%;
   background: var(--color-white);
-  padding: 07rem 0;
+  padding: 0.7rem 0;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -105,6 +105,7 @@ nav .container {
   padding: var(--search-padding);
   border-radius: var(--border-raduis);
 }
+
 .search-bar input[type="search"] {
   background: transparent;
   width: 30vw;
@@ -112,7 +113,11 @@ nav .container {
   color: var(--color-dark);
   margin-left: 1rem;
 }
-
-.search-bar input[type="search"]::placeholder {
-  color: var(--color-gray);
+nav .container .search-bar input[type="search"]::placeholder {
+  color: var(--color-dark);
+}
+.create {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
