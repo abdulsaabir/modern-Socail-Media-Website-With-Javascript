@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-light: #f0eef6;
+  --color-gray: #9e98b3;
+  --color-primary: #6b4ce6;
+  --color-secondry: #d6ccff;
+  --color-success: #51fb51;
+  --color-danger: #fb5151;
+  --color-dark: #241e38;
+  --color-black: #151221;
+
+  --border-raduis: 2rem;
+  --card-border: 1rem;
+  --btn-padding: 0.6rem 2rem;
+  --search-padding: 0.6rem 1rem;
+  --card-padding: 1rem;
+}
