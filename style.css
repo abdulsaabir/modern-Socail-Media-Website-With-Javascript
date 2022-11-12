@@ -35,3 +35,12 @@ body {
   background: var(--color-light);
   overflow-x: hidden;
 }
+
+/* general 
+    styles
+*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
