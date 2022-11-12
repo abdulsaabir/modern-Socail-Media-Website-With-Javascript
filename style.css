@@ -17,3 +17,14 @@
   --search-padding: 0.6rem 1rem;
   --card-padding: 1rem;
 }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
