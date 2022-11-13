@@ -127,7 +127,7 @@ nav .container .search-bar input[type="search"]::placeholder {
 
 /* ================================= MAIN ================================= */
 
-main {
+/* main {
   position: relative;
   top: 5.4rem;
 }
@@ -152,10 +152,10 @@ main .container .left .profile {
   justify-content: center;
   column-gap: 1rem;
   width: 100%;
-}
+} */
 
 /* ------------------------------- Sidebar ------------------------------- */
-
+/* 
 .sidebar {
   margin-top: 1rem;
   background: var(--color-white);
@@ -230,12 +230,13 @@ main .container .left .profile {
   position: absolute;
   top: 0;
   left: 105%;
-  width: 30rem;
+  width: 28rem;
   background: var(--color-white);
   border-radius: var(--card-border-raduis);
   padding: var(--card-padding);
   box-shadow: 0 0 2rem hsl(var(--color-danger), 75%, 60% 25%);
   z-index: 8;
+  display: none;
 }
 .notifications-popup::before {
   content: "";
@@ -257,4 +258,37 @@ main .container .left .profile {
 }
 .notifications-popup > div small {
   display: block;
+}
+.notifications-popup > div {
+  font-weight: 500;
+  font-size: 18px;
+} */
+
+/* main */
+main {
+  position: relative;
+  top: 5.4rem;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 18vw auto 20vw;
+  position: relative;
+  column-gap: 1rem;
+}
+main .container .left {
+  height: max-content;
+  position: sticky;
+  top: var(---sticky-top-left);
+}
+
+main .container .left .profile {
+  background: var(--color-white);
+  width: fit-content;
+  padding: var(--card-padding);
+  display: flex;
+  border-radius: var(--card-border-raduis);
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  width: 100%;
 }
