@@ -172,6 +172,59 @@ main .container .left .profile {
 .sidebar .menu-item:hover {
   background: var(--color-light);
 }
+.sidebar i {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+  margin-left: 2rem;
+  position: relative;
+}
+.sidebar i .notification-count {
+  background: var(--color-danger);
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.4rem;
+  width: fit-content;
+}
+
+.sidebar h3 {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+.sidebar .active {
+  background: var(--color-light);
+}
+
+.sidebar .active i,
+.sidebar .active h3 {
+  color: var(--color-primary);
+}
+.sidebar .active::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0.5rem;
+  background: var(--color-primary);
+  display: block;
+}
+.sidebar .menu-item:first-child.active {
+  border-top-left-radius: var(--card-border-raduis);
+  overflow: hidden;
+}
+.sidebar .menu-item:last-child.active {
+  border-bottom-left-radius: var(--card-border-raduis);
+  overflow: hidden;
+}
+
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
 
 .notifications-popup {
   position: absolute;
@@ -270,7 +323,7 @@ main .container .left .profile {
   margin-left: 2rem;
   position: relative;
 }
-.sidebar .menu-item i .notification-count {
+*/ .sidebar .menu-item i .notification-count {
   background: var(--color-danger);
   color: #fff;
   font-size: 0.7rem;
