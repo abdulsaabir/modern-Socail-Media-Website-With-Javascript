@@ -286,10 +286,13 @@ main .container .left .profile {
   font-size: 1rem;
 }
 
+
 .left .btn {
   margin-top: 1rem;
   width: 100%;
-}
+  text-align: center;
+  padding: 1rem 0;
+} 
 .sidebar .active {
   background: var(--color-light);
 }
@@ -297,13 +300,6 @@ main .container .left .profile {
 .sidebar .active h3 {
   color: var(--color-primary);
 }
-
-/* 
-
-
-
-
-
 .sidebar .active::before {
   position: absolute;
   content: "";
@@ -320,10 +316,13 @@ main .container .left .profile {
   border-bottom-left-radius: var(--card-border-raduis);
   overflow: hidden;
 }
+/* 
 
-.left .btn {
-  margin-top: 1rem;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-} */
+
+
+
+
+
+
+
+
