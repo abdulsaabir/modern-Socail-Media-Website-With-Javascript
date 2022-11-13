@@ -275,22 +275,11 @@ main .container {
   position: relative;
   column-gap: 1rem;
 }
-main .container .left {
-  height: max-content;
-  position: sticky;
-  top: var(---sticky-top-left);
-}
 
 main .container .left .profile {
   background: var(--color-white);
   width: fit-content;
   padding: var(--card-padding);
   display: flex;
-  border-radius: var(--card-border-raduis);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 1rem;
-  width: 100%;
+  border-radius: ;
 }
