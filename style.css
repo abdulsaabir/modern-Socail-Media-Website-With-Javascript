@@ -328,7 +328,7 @@ main .container .left .profile {
   transition: all 300ms ease;
   cursor: pointer;
   position: relative;
- column-gap: 1r;
+  gap: 1rem;
 }
 /*
 .sidebar .menu-item i {
