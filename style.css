@@ -297,14 +297,6 @@ main .container .left .profile {
 .sidebar .active h3 {
   color: var(--color-primary);
 }
-.sidebar .active::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 0.5rem;
-  background: var(--color-primary);
-  display: block;
-}
 
 /* 
 
@@ -313,7 +305,14 @@ main .container .left .profile {
 
 
 
-
+.sidebar .menu-item:first-child.active {
+  border-top-left-radius: var(--card-border-raduis);
+  overflow: hidden;
+}
+.sidebar .menu-item:last-child.active {
+  border-bottom-left-radius: var(--card-border-raduis);
+  overflow: hidden;
+}
 
 .left .btn {
   margin-top: 1rem;
