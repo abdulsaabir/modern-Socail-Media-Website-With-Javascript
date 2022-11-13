@@ -315,11 +315,6 @@ main .container .left .profile {
   display: flex;
 }
 .sidebar .menu-item i {
-  position: relative;
 }
 .sidebar .menu-item i .notification-count {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--color-danger);
 }
