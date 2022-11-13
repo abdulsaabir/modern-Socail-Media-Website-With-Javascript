@@ -316,7 +316,7 @@ main .container .left .profile {
 }
 .sidebar .menu-item i {
   position: relative;
-  font-size: 1;
+  font-size: ;
 }
 .sidebar .menu-item i .notification-count {
   background: var(--color-danger);
