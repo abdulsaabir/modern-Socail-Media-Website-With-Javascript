@@ -330,26 +330,4 @@ main .container .left .profile {
   right: -0.4rem;
   width: fit-content;
 }
-.left .btn {
-  margin-top: 1rem;
-  width: 100%;
-}
-
-/*  */
-.sidebar .menu-item {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  transition: all 300ms ease;
-  cursor: pointer;
-  position: relative;
-}
-.sidebar .menu-item:hover {
-  background: var(--color-light);
-}
-.sidebar i {
-  font-size: 1.4rem;
-  color: var(--color-gray);
-  margin-left: 2rem;
-  position: relative;
-}
+.sidebar .btn;
