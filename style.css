@@ -281,10 +281,6 @@ main .container .left .profile {
   right: -0.4rem;
   width: fit-content;
 }
-.sidebar h3 {
-  margin-left: 1.5rem;
-  font-size: 1rem;
-}
 
 .left .btn {
   margin-top: 1rem;
@@ -295,6 +291,9 @@ main .container .left .profile {
 
 
 
+.sidebar .active {
+  background: var(--color-light);
+}
 
 .sidebar .active i,
 .sidebar .active h3 {
