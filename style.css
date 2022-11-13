@@ -305,14 +305,7 @@ main .container .left .profile {
   background: var(--color-primary);
   display: block;
 }
-.sidebar .menu-item:first-child.active {
-  border-top-left-radius: var(--card-border-raduis);
-  overflow: hidden;
-}
-.sidebar .menu-item:last-child.active {
-  border-bottom-left-radius: var(--card-border-raduis);
-  overflow: hidden;
-}
+
 /* 
 
 
@@ -322,4 +315,9 @@ main .container .left .profile {
 
 
 
-
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+} */
