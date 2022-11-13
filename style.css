@@ -290,9 +290,6 @@ main .container .left .profile {
   margin-top: 1rem;
   width: 100%;
 }
-.sidebar .active {
-  background: var(--color-light);
-}
 
 /* 
 
