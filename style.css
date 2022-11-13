@@ -189,9 +189,6 @@ main .container .left .profile {
   right: -0.4rem;
   width: fit-content;
 }
-.notifications-popup {
-  display: none;
-}
 
 .sidebar h3 {
   margin-left: 1.5rem;
@@ -220,4 +217,18 @@ main .container .left .profile {
 .sidebar .menu-item:last-child.active {
   border-bottom-left-radius: var(--card-border-raduis);
   overflow: hidden;
+}
+
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.notifications-popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
 }
