@@ -190,10 +190,6 @@ main .container .left .profile {
   width: fit-content;
 }
 
-.sidebar .menu-item .notifications-popup b {
-  font-size: 18px;
-}
-
 .sidebar h3 {
   margin-left: 1.5rem;
   font-size: 1rem;
@@ -233,7 +229,7 @@ main .container .left .profile {
 .notifications-popup {
   position: absolute;
   top: 0;
-  left: 110%;
+  left: 105%;
   width: 30rem;
   background: var(--color-white);
   border-radius: var(--card-border-raduis);
@@ -250,4 +246,15 @@ main .container .left .profile {
   position: absolute;
   left: -0.6rem;
   transform: rotate(45deg);
+}
+.notifications-popup > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notifications-popup > div:not(:first-child) {
+  margin-top: 1rem;
+}
+.notifications-popup > div small {
+  display: block;
 }
