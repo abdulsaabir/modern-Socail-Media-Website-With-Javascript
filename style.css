@@ -39,8 +39,11 @@ body {
   overflow-x: hidden;
 }
 
-/* general 
-    styles
+/*| 
+  \
+      general 
+    
+        styles
 */
 
 .container {
@@ -235,9 +238,8 @@ main .container .left .profile {
   border-radius: var(--card-border-raduis);
   padding: var(--card-padding);
   box-shadow: 0 0 2rem hsl(var(--color-danger), 75%, 60% 25%);
-  z-index: 8;
+  z-index: 15;
   display: none;
-  transition: all 2s ease-in-out;
 }
 .activeNow {
   display: inline-block;
@@ -266,4 +268,142 @@ main .container .left .profile {
 .notifications-popup > div {
   font-weight: 500;
   font-size: 18px;
+}
+
+/* ================================= middle ================================= */
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  height: 12rem;
+  gap: 0.5rem;
+}
+
+.stories .story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-raduis);
+  position: relative;
+  z-index: 4;
+  color: white;
+  width: 100%;
+  font-size: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.stories .story::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.816));
+  bottom: 0;
+  z-index: -1;
+  display: block;
+}
+.story .profile-photo {
+  margin-right: auto;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--color-primary);
+}
+
+/* ----------------------------- Create post ----------------------------- */
+
+.create-post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-raduis);
+  padding: 0.4rem var(--card-padding);
+}
+.create-post .btn {
+  margin-left: auto;
+}
+.create-post input[type="text"] {
+  margin-left: 2rem;
+  background: transparent;
+  font-size: 1rem;
+  color: var(--color-dark);
+  width: 100%;
+  z-index: 1;
+  outline: none;
+}
+.create-post input[type="text"]::placeholder {
+  color: var(--color-dark);
+}
+
+/* -----------------------------  feed ----------------------------- */
+
+.feeds .feed {
+  background: var(--color-white);
+  margin: 1rem 0;
+  border-radius: var(--card-border-raduis);
+  padding: var(--card-padding);
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+}
+.feed .head {
+  display: flex;
+  justify-content: space-between;
+}
+.head .user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.user .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+/*
+
+/* --------------------- phot */
+
+.feed .photo {
+  border-radius: var(--card-border-raduis);
+  margin: 0.7rem 0;
+  overflow: hidden;
+}
+
+/* --------------------- action-button */
+.action-button {
+  margin: 0.6rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+/* --------------------- liked bye */
+
+.liked-by {
+  display: flex;
+}
+.liked-by span {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px var(--color-white) solid;
+}
+
+.liked-by span:not(:first-child) {
+  margin-left: -0.6rem;
+}
+.liked-by p {
+  margin-left: 0.5rem;
 }
