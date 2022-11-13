@@ -199,4 +199,20 @@ main .container .left .profile {
 }
 .sidebar .active {
   background: var(--color-light);
+  position: relative;
+}
+
+.sidebar .active i,
+.sidebar .active h3 {
+  color: var(--color-primary);
+}
+.sidebar .active::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 6px;
+  background: var(--color-primary);
+  border-radius: inherit;
 }
