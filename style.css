@@ -296,7 +296,7 @@ main .container .left .profile {
 /* sidebar */
 
 .sidebar {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -304,11 +304,6 @@ main .container .left .profile {
   margin-top: 1rem;
   background: var(--color-white);
   padding: var(--card-padding);
-  border-radius: var(--card-border-raduis); */
-}
-.sidebar {
-  margin-top: 1rem;
-  background: var(--color-white);
   border-radius: var(--card-border-raduis);
 }
 .notifications-popup {
@@ -319,15 +314,6 @@ main .container .left .profile {
   height: 3rem;
   display: flex;
   gap: 1rem;
-}
-
-/* .sidebar .menu-item {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  transition: all 300ms ease;
-  cursor: pointer;
-  position: relative;
 }
 .sidebar .menu-item i {
   position: relative;
@@ -349,8 +335,15 @@ main .container .left .profile {
   width: 100%;
 }
 
-/* fdska;flkdsj;kfld */
-
+/*  */
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  transition: all 300ms ease;
+  cursor: pointer;
+  position: relative;
+}
 .sidebar .menu-item:hover {
   background: var(--color-light);
 }
@@ -359,4 +352,4 @@ main .container .left .profile {
   color: var(--color-gray);
   margin-left: 2rem;
   position: relative;
-} */
+}
