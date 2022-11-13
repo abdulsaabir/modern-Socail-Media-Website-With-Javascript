@@ -293,17 +293,16 @@ main .container .left .profile {
 .sidebar .active {
   background: var(--color-light);
 }
-.sidebar .active i,
-.sidebar .active h3 {
-  color: var(--color-primary);
-}
 
 /* 
 
 
 
 
-
+.sidebar .active i,
+.sidebar .active h3 {
+  color: var(--color-primary);
+}
 .sidebar .active::before {
   position: absolute;
   content: "";
