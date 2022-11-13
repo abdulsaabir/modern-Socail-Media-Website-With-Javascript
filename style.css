@@ -265,18 +265,8 @@ main .container .left .profile {
 } */
 
 /* main */
-main {
-  position: relative;
-  top: 5.4rem;
-}
+
 main .container {
   display: grid;
   grid-template-columns: 18vw auto 20vw;
-  position: relative;
-  column-gap: 1rem;
-}
-
-main .container .left .profile {
-  background: var(--color-white);
-  wid
 }
