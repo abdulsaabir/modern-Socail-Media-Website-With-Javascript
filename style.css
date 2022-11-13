@@ -322,8 +322,4 @@ main .container .left .profile {
   top: 0;
   left: 0;
   background: var(--color-danger);
-  width: fit-content;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4rem;
-  font-size: 0.8rem;
 }
