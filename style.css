@@ -316,9 +316,17 @@ main .container .left .profile {
 }
 .sidebar .menu-item i {
   position: relative;
-  font-size: ;
 }
 .sidebar .menu-item i .notification-count {
+  position: absolute;
+  top: 1rem;
+  right: -0.6rem;
+  background: var(--color-danger);
+  width: fit-content;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4rem;
+  font-size: 0.8rem;
+
   background: var(--color-danger);
   color: #fff;
   font-size: 0.7rem;
