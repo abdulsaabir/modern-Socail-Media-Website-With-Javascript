@@ -281,14 +281,23 @@ main .container .left .profile {
   right: -0.4rem;
   width: fit-content;
 }
-
 .left .btn {
   margin-top: 1rem;
   width: 100%;
 }
 
 /* 
-
+.sidebar i .notification-count {
+  background: var(--color-danger);
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.4rem;
+  width: fit-content;
+}
 
 .sidebar h3 {
   margin-left: 1.5rem;
