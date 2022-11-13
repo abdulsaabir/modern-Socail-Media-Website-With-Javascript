@@ -304,7 +304,14 @@ main .container .left .profile {
 
 
 
-
+.sidebar .active::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 0.5rem;
+  background: var(--color-primary);
+  display: block;
+}
 .sidebar .menu-item:first-child.active {
   border-top-left-radius: var(--card-border-raduis);
   overflow: hidden;
