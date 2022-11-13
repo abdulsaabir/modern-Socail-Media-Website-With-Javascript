@@ -335,7 +335,6 @@ main .container .left .profile {
   position: relative;
   font-size: 1.4rem;
 }
-
 .sidebar .menu-item i .notification-count {
   background: var(--color-danger);
   color: #fff;
@@ -357,3 +356,9 @@ main .container .left .profile {
 .sidebar .menu-item:hover {
   background: var(--color-light);
 }
+.sidebar i {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+  margin-left: 2rem;
+  position: relative;
+} */
