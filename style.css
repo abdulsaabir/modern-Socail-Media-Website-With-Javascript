@@ -278,8 +278,5 @@ main .container {
 
 main .container .left .profile {
   background: var(--color-white);
-  width: fit-content;
-  padding: var(--card-padding);
-  display: flex;
-  border-radius: ;
+  wid
 }
