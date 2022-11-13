@@ -303,8 +303,7 @@ main .container .left .profile {
   width: 100%;
   margin-top: 1rem;
   background: var(--color-white);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-raduis);
+  padding: ;
 }
 .notifications-popup {
   display: none;
@@ -312,9 +311,4 @@ main .container .left .profile {
 .sidebar .menu-item {
   width: 100%;
   height: 3rem;
-  display: flex;
-}
-.sidebar .menu-item i {
-}
-.sidebar .menu-item i .notification-count {
 }
