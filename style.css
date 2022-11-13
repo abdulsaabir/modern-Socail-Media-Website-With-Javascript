@@ -199,7 +199,6 @@ main .container .left .profile {
 }
 .sidebar .active {
   background: var(--color-light);
-  position: relative;
 }
 
 .sidebar .active i,
@@ -209,10 +208,16 @@ main .container .left .profile {
 .sidebar .active::before {
   position: absolute;
   content: "";
-  top: 0;
   height: 100%;
-  left: 0;
-  width: 6px;
+  width: 0.5rem;
   background: var(--color-primary);
-  border-radius: inherit;
+  display: block;
+}
+.sidebar .menu-item:first-child.active {
+  border-top-left-radius: var(--card-border-raduis);
+  overflow: hidden;
+}
+.sidebar .menu-item:last-child.active {
+  border-bottom-left-radius: var(--card-border-raduis);
+  overflow: hidden;
 }
