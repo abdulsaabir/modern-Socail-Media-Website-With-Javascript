@@ -229,6 +229,11 @@ main .container .left .profile {
 .notifications-popup {
   position: absolute;
   top: 0;
-  right: 0;
-  transform: translateX(100%);
+  left: 110%;
+  width: 30rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-raduis);
+  padding: var(--card-padding);
+  box-shadow: 0 0 2rem hsl(var(--color-danger), 75%, 60% 25%);
+  z-index: 8;
 }
