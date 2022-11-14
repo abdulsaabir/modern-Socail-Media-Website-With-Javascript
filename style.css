@@ -339,6 +339,7 @@ main .container .left .profile {
 }
 .create-post input[type="text"]::placeholder {
   color: var(--color-dark);
+  z-index: -1;
 }
 
 /* -----------------------------  feed ----------------------------- */
