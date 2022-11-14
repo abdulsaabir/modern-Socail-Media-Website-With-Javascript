@@ -242,6 +242,7 @@ main .container .left .profile {
   display: none;
 }
 .activeNow {
+  z-index: 15;
   display: inline-block;
 }
 .notifications-popup::before {
@@ -339,7 +340,6 @@ main .container .left .profile {
 }
 .create-post input[type="text"]::placeholder {
   color: var(--color-dark);
-  z-index: -1;
 }
 
 /* -----------------------------  feed ----------------------------- */
