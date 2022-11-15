@@ -587,16 +587,81 @@ main .container .left .profile {
   text-align: start;
 }
 .color .choose-color {
-  width: 100%;
   background: var(--color-light);
-  height: 0.3rem;
   padding: var(--search-padding);
   border-radius: var(--card-border-raduis);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .choose-color > span {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.choose-color .active {
+  border: 5px white solid;
+}
+
+.choose-color > span:first-child {
+  background: hsl(252, 75%, 60%);
+}
+.choose-color > span:nth-child(2) {
+  background: hsl(52, 75%, 60%);
+}
+.choose-color > span:nth-child(3) {
+  background: hsl(352, 75%, 60%);
+}
+.choose-color > span:nth-child(4) {
+  background: hsl(152, 75%, 60%);
+}
+.choose-color span:last-child {
+  background: hsl(197, 75%, 60%);
+}
+
+/* --------------------- background*/
+.customize-theme .background {
+  margin-top: 2rem;
+  text-align: start;
+}
+
+.background .choose-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.choose-bg > div {
+  padding: var(--card-padding);
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.customize-theme .choose-bg .active {
+  border: 2px solid var(--color-success);
+}
+.bg-1 {
+  background: white;
+  color: black;
+}
+.bg-2 {
+  background: hsl(252, 30%, 17%);
+  color: white;
+}
+.bg-3 {
+  background: hsl(252, 30%, 10%);
+  color: white;
+}
+.choose-bg span {
   width: 2rem;
   height: 2rem;
+  background-color: transparent;
   border-radius: 50%;
+  border: 3px solid var(--color-light);
 }
