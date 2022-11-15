@@ -471,9 +471,6 @@ main .container .left .profile {
   font-size: 0.8rem;
   font-weight: 600;
 }
-.messages .message:last-child {
-  margin: 0;
-}
 .right .profile-photo {
   position: relative;
   overflow: visible;
