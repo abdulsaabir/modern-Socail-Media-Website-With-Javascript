@@ -15,11 +15,20 @@ let photosArray = [
   "./images/feed-6.jpg",
   "./images/feed-7.jpg",
 ];
-
+let messages = [
+  {
+    url: "./images/feed-1.jpg",
+    name: "hassan kaafi",
+    text: "goormee iimaane",
+    active: true,
+    read: false,
+  },
+];
 let menuItems = document.querySelectorAll(".menu-item ");
 let notificationsPopup = document.querySelector(".notifications-popup ");
 let stories = document.querySelectorAll(".story");
 let photos = document.querySelectorAll(".imagesphoto");
+let messagesList = document.querySelector(".messagesList");
 
 notificationsPopup.classList.remove("activeNow");
 

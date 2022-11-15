@@ -539,6 +539,7 @@ main .container .left .profile {
   display: grid;
   place-items: center;
   text-align: center;
+  display: none;
 }
 
 .customize-theme .card {
