@@ -408,3 +408,39 @@ main .container .left .profile {
 .liked-by p {
   margin-left: 0.5rem;
 }
+
+/* ================================= right ================================= */
+
+.right .messages {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-raduis);
+}
+.messages .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messages .search-bar {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.messages .category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.messages .category > h6 {
+  padding-bottom: 0.3rem;
+  width: 100%;
+  border-bottom: 4px solid var(--color-gray);
+  text-align: center;
+}
+.messages .category .active {
+  border-bottom: 5px solid black;
+}
+
+.category .messages-requests {
+  color: var(--color-primary);
+}
