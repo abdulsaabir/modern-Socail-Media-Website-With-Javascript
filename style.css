@@ -411,6 +411,12 @@ main .container .left .profile {
 
 /* ================================= right ================================= */
 
+.right {
+  height: max-content;
+  position: sticky;
+  top: var(---sticky-top-right);
+  bottom: 0;
+}
 .right .messages {
   background: var(--color-white);
   padding: var(--card-padding);
@@ -443,4 +449,34 @@ main .container .left .profile {
 
 .category .messages-requests {
   color: var(--color-primary);
+}
+
+.messages .message {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.message .text-muted {
+  font-size: 16px;
+}
+
+/* --------------------- friend-request*/
+
+.friend-request {
+  margin-top: 1rem;
+}
+.friend-request h4 {
+  color: var(--color-gray);
+  margin-left: 0.7rem;
+  margin-bottom: 1rem;
+}
+.friend-request .requests {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-raduis);
+}
+
+.friend-request .info {
+  display: flex;
+  column-gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
