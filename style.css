@@ -526,7 +526,24 @@ main .container .left .profile {
   display: flex;
   gap: 1rem;
 }
-nav,
-main {
-  display: none;
+
+/* ================================= customize-theme  ================================= */
+.customize-theme {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 404;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.customize-theme .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-raduis);
+  width: 50%;
 }
