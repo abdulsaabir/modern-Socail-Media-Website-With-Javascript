@@ -547,3 +547,37 @@ main .container .left .profile {
   border-radius: var(--card-border-raduis);
   width: 50%;
 }
+
+/* --------------------- font-size*/
+.customize-theme .font-size {
+  margin-top: 5rem;
+}
+.font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--search-padding);
+  border-radius: var(--card-border-raduis);
+  background: var(--color-light);
+}
+.font-size .choose-size {
+  width: 100%;
+  height: 0.3rem;
+  display: flex;
+  background-color: var(--color-secondry);
+  margin: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose-size > span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondry);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.choose-size .active {
+  background: var(--color-primary);
+}
+
+/* --------------------- Colors*/
