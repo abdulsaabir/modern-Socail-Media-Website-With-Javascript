@@ -581,3 +581,22 @@ main .container .left .profile {
 }
 
 /* --------------------- Colors*/
+
+.customize-theme .color {
+  margin-top: 2rem;
+  text-align: start;
+}
+.color .choose-color {
+  width: 100%;
+  background: var(--color-light);
+  height: 0.3rem;
+  padding: var(--search-padding);
+  border-radius: var(--card-border-raduis);
+  display: flex;
+  justify-content: space-between;
+}
+.choose-color > span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
