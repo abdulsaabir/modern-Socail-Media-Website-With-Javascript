@@ -526,3 +526,7 @@ main .container .left .profile {
   display: flex;
   gap: 1rem;
 }
+nav,
+main {
+  display: none;
+}
