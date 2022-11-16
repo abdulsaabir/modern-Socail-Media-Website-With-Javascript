@@ -686,3 +686,23 @@ main .container .left .profile {
     display: none;
   }
 }
+
+@media (max-width: 992px) {
+  nav .search-bar {
+    display: none;
+  }
+  main .container {
+    grid-template-columns: 0 auto 5rem;
+  }
+  main .container .left {
+    grid-column: 3/4;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .notifications-popup {
+    position: absolute;
+    left: -20rem;
+    width: 20rem;
+  }
+}
