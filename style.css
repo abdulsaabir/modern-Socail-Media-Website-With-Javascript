@@ -531,14 +531,17 @@ main .container .left .profile {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(53, 53, 53, 0.5);
   z-index: 404;
   display: grid;
   place-items: center;
   text-align: center;
   display: none;
 }
-
+.show {
+  display: grid;
+  overflow-y: hidden;
+}
 .customize-theme .card {
   background: var(--color-white);
   padding: 3rem;

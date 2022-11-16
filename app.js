@@ -129,3 +129,8 @@ searchMessage.addEventListener("keyup", (e) => {
 window.addEventListener("DOMContentLoaded", () => {
   Loadmessage(messages);
 });
+/* ================================= customize-theme  ================================= */
+theme.addEventListener("click", () => {
+  customizeTheme.classList.add("show");
+  document.body.classList.add("show");
+});
