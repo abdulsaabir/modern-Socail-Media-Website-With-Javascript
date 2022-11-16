@@ -153,28 +153,51 @@ cancel.addEventListener("click", () => {
 /* --------------fontSize -------------- */
 fontSize.forEach((size) => {
   let fontSizeNow;
-  changeActive(fontSize);
   size.addEventListener("click", () => {
+    changeActive(fontSize);
     if (size.classList.contains("font-size-1")) {
       fontSizeNow = "10px";
+      root.style.setProperty("--sticky-top-left", "5.4rem");
+      root.style.setProperty("--sticky-top-right", "5.4rem");
     } else if (size.classList.contains("font-size-2")) {
       fontSizeNow = "13px";
+      root.style.setProperty("--sticky-top-left", "5.4rem");
+      root.style.setProperty("--sticky-top-right", "-7rem");
     } else if (size.classList.contains("font-size-3")) {
       fontSizeNow = "16px";
+      root.style.setProperty("--sticky-top-left", "-2rem");
+      root.style.setProperty("--sticky-top-right", "-17rem");
     } else if (size.classList.contains("font-size-4")) {
       fontSizeNow = "19px";
+      root.style.setProperty("--sticky-top-left", "-5rem");
+      root.style.setProperty("--sticky-top-right", "-25rem");
     } else {
       fontSizeNow = "22px";
+      root.style.setProperty("--sticky-top-left", "-10rem");
+      root.style.setProperty("--sticky-top-right", "-33rem");
     }
     // change the fontSize of the root html
+    size.classList.add("active");
     document.querySelector("html").style.fontSize = fontSizeNow;
   });
 });
 
 /* --------------chooseColor -------------- */
 chooseColor.forEach((size) => {
+  let fontColor;
   size.addEventListener("click", () => {
     changeActive(chooseColor);
+    if (size.classList.contains("font-size-1")) {
+      root.style.setProperty(" --color-primary", "#6b4ce6");
+    } else if (size.classList.contains("font-size-2")) {
+      root.style.setProperty(" --color-primary", "#e6d14c");
+    } else if (size.classList.contains("font-size-3")) {
+      root.style.setProperty(" --color-primary", "#e64c61");
+    } else if (size.classList.contains("font-size-4")) {
+      root.style.setProperty(" --color-primary", "-5rem");
+    } else {
+      root.style.setProperty(" --color-primary", "-10rem");
+    }
     size.classList.add("active");
   });
 });
