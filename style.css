@@ -663,3 +663,9 @@ main .container .left .profile {
   border-radius: 50%;
   border: 3px solid var(--color-light);
 }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 96%;
+  }
+}
