@@ -52,13 +52,12 @@ let photos = document.querySelectorAll(".imagesphoto");
 let messagesList = document.querySelector(".messagesList");
 let searchMessage = document.getElementById("search-message");
 notificationsPopup.classList.remove("activeNow");
+let notificationCount = document.querySelector(".notification-count");
 
 menuItems.forEach((menuItem) => {
   menuItem.addEventListener("click", (e) => {
     let currentTarget = e.currentTarget;
-    currentTarget.childElementCount > 2
-      ? notificationsPopup.classList.toggle("activeNow")
-      : notificationsPopup.classList.remove("activeNow");
+    currentTarget.childElementCount > 2 ? remove() : add();
 
     if (currentTarget.classList.contains("active")) return;
     menuItems.forEach((menuitemnow) => menuitemnow.classList.remove("active"));
@@ -66,6 +65,14 @@ menuItems.forEach((menuItem) => {
   });
 });
 
+function remove() {
+  notificationsPopup.classList.toggle("activeNow");
+  notificationCount.style.display = "none";
+}
+function add() {
+  notificationsPopup.classList.remove("activeNow");
+  notificationCount.style.display = "inline-block";
+}
 stories.forEach((story, index) => {
   story.style.backgroundImage = backgroundArray[index];
 });
