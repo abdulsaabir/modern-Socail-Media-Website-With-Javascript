@@ -54,7 +54,9 @@ let searchMessage = document.getElementById("search-message");
 notificationsPopup.classList.remove("activeNow");
 let notificationCount = document.querySelector(".notification-count");
 
-function changeActive()
+function changeActive() {
+  menuItems.forEach(item);
+}
 
 menuItems.forEach((item) => {
   item.addEventListener("click", () => {
