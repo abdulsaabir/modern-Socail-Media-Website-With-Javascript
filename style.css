@@ -696,6 +696,7 @@ main .container .left .profile {
     gap: 0;
   }
   main .container .left {
+    width: 5rem;
     grid-column: 3/4;
     position: fixed;
     bottom: 0;

@@ -54,6 +54,10 @@ let searchMessage = document.getElementById("search-message");
 notificationsPopup.classList.remove("activeNow");
 let messagesnotification = document.getElementById("message-notification");
 let messagesbox = document.querySelector(".messages");
+let theme = document.getElementById("theme");
+let customizeTheme = document.querySelector(".customize-theme");
+
+//
 
 function changeActive() {
   menuItems.forEach((item) => {
