@@ -150,3 +150,11 @@ fontSize.forEach((size) => {
     size.classList.add("active");
   });
 });
+
+/* --------------chooseColor -------------- */
+chooseColor.forEach((size) => {
+  size.addEventListener("click", () => {
+    changeActive(chooseColor);
+    size.classList.add("active");
+  });
+});
