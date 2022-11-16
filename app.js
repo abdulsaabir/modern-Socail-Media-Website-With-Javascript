@@ -52,15 +52,76 @@ let photos = document.querySelectorAll(".imagesphoto");
 let messagesList = document.querySelector(".messagesList");
 let searchMessage = document.getElementById("search-message");
 notificationsPopup.classList.remove("activeNow");
-let notificationCount = document.querySelector(".notification-count");
+let messagesnotification = document.getElementById("message-notification");
+let messagesbox = document.querySelector(".messages");
 
 function changeActive() {
-  menuItems.forEach(item);
+  menuItems.forEach((item) => {
+    item.classList.remove("active");
+  });
 }
 
 menuItems.forEach((item) => {
   item.addEventListener("click", () => {
     changeActive();
     item.classList.add("active");
+    if (item.id != "notifications") {
+      console.log("i am in");
+      document.querySelector(".notifications-popup").style.display = "none";
+      document.querySelector(".notification-count").style.display = "block";
+    } else {
+      document.querySelector(".notifications-popup").style.display = "block";
+      document.querySelector(".notification-count").style.display = "none";
+    }
   });
+});
+
+stories.forEach((story, index) => {
+  story.style.backgroundImage = backgroundArray[index];
+});
+
+photos.forEach((photo, index) => {
+  photo.src = photosArray[index];
+});
+
+messagesnotification.addEventListener("click", () => {
+  messagesbox.style.boxShadow = "0 0 1rem var(--color-primary)";
+  messagesnotification.querySelector(".notification-count").style.display =
+    "none";
+  setTimeout(() => {
+    messagesbox.style.boxShadow = "none";
+  }, 2000);
+});
+
+function Loadmessage(array) {
+  messagesList.innerHTML = "";
+  array.forEach((message) => {
+    let messagenow = document.createElement("div");
+    messagenow.innerHTML = `
+  <div class="message">
+  <div class="profile-photo">
+      <img src=${message.url}>
+      ${message.active ? '<div class="active"></div>' : ""}
+  </div>
+  <div class="message-body">
+  <h5>${message.name}</h5>
+      <p class=${message.read ? "text-muted" : "text-bold"}>${message.text}</p>
+      </div>
+      </div>`;
+    messagesList.appendChild(messagenow);
+  });
+}
+searchMessage.addEventListener("keyup", (e) => {
+  let value = searchMessage.value;
+  let FiltredMessages = messages.filter((message) => {
+    let name = message.name.toLocaleLowerCase();
+    if (name.includes(value)) {
+      console.log();
+      return message;
+    }
+  });
+  Loadmessage(FiltredMessages);
+});
+window.addEventListener("DOMContentLoaded", () => {
+  Loadmessage(messages);
 });
