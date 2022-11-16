@@ -668,4 +668,17 @@ main .container .left .profile {
   .container {
     width: 96%;
   }
+  main .container {
+    grid-template-columns: 5rem auto 30vw;
+    gap: 1rem;
+  }
+  main .container .left .profile {
+    display: none;
+  }
+  .sidebar h3 {
+    display: none;
+  }
+  .left .btn {
+    display: none;
+  }
 }
