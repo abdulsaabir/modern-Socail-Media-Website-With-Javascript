@@ -11,6 +11,8 @@ let theme = document.getElementById("theme");
 let customizeTheme = document.querySelector(".customize-theme");
 let fontSize = document.querySelectorAll(".choose-size span");
 let chooseColor = document.querySelectorAll(".choose-color span");
+let cancel = document.querySelector(".cancel");
+let root = document.querySelector(":root");
 
 // stories array
 let backgroundArray = [
@@ -142,12 +144,30 @@ theme.addEventListener("click", () => {
   customizeTheme.style.display = "grid";
   document.body.classList.add("show");
 });
+cancel.addEventListener("click", () => {
+  customizeTheme.style.display = "none";
+  document.body.classList.remove("show");
+  changeActive(menuItems);
+});
 
 /* --------------fontSize -------------- */
 fontSize.forEach((size) => {
+  let fontSizeNow;
+  changeActive(fontSize);
   size.addEventListener("click", () => {
-    changeActive(fontSize);
-    size.classList.add("active");
+    if (size.classList.contains("font-size-1")) {
+      fontSizeNow = "10px";
+    } else if (size.classList.contains("font-size-2")) {
+      fontSizeNow = "13px";
+    } else if (size.classList.contains("font-size-3")) {
+      fontSizeNow = "16px";
+    } else if (size.classList.contains("font-size-4")) {
+      fontSizeNow = "19px";
+    } else {
+      fontSizeNow = "22px";
+    }
+    // change the fontSize of the root html
+    document.querySelector("html").style.fontSize = fontSizeNow;
   });
 });
 

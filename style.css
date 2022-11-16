@@ -538,6 +538,14 @@ main .container .left .profile {
   text-align: center;
   display: none;
 }
+.cancel a {
+  position: absolute;
+  font-size: 2em;
+  color: black;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
 .show {
   overflow-y: hidden;
 }
@@ -546,6 +554,7 @@ main .container .left .profile {
   padding: 3rem;
   border-radius: var(--card-border-raduis);
   width: 50%;
+  position: relative;
 }
 
 /* --------------------- font-size*/
@@ -721,5 +730,16 @@ main .container .left .profile {
   }
   main .container .right {
     display: none;
+  }
+  .background .choose-bg {
+    flex-direction: column;
+  }
+  .customize-theme .card {
+    width: 92vw;
+  }
+  .customize-theme .font-size,
+  .customize-theme .color,
+  .customize-theme .background {
+    margin-top: 0.2rem;
   }
 }
