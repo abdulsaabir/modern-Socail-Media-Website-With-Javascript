@@ -539,7 +539,6 @@ main .container .left .profile {
   display: none;
 }
 .show {
-  display: grid;
   overflow-y: hidden;
 }
 .customize-theme .card {
