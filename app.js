@@ -54,62 +54,29 @@ let searchMessage = document.getElementById("search-message");
 notificationsPopup.classList.remove("activeNow");
 let notificationCount = document.querySelector(".notification-count");
 
-menuItems.forEach((menuItem) => {
-  menuItem.addEventListener("click", (e) => {
-    let currentTarget = e.currentTarget;
-    currentTarget.childElementCount > 2 ? remove() : add();
+function changeActive() {
+  menuItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+}
 
-    if (currentTarget.classList.contains("active")) return;
-    menuItems.forEach((menuitemnow) => menuitemnow.classList.remove("active"));
-    currentTarget.classList.add("active");
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    changeActive();
+    item.classList.add("active");
+    if (item.id != "notifications") {
+      console.log("i am in");
+      document.querySelector(".notifications-popup").style.display = "none";
+    } else {
+      document.querySelector(".notifications-popup").style.display = "block";
+    }
   });
 });
 
-function remove() {
-  notificationsPopup.classList.toggle("activeNow");
-  notificationCount.style.display = "none";
-}
-function add() {
-  notificationsPopup.classList.remove("activeNow");
-  notificationCount.style.display = "inline-block";
-}
 stories.forEach((story, index) => {
   story.style.backgroundImage = backgroundArray[index];
 });
 
 photos.forEach((photo, index) => {
   photo.src = photosArray[index];
-});
-window.addEventListener("DOMContentLoaded", () => {
-  Loadmessage(messages);
-});
-
-function Loadmessage(array) {
-  messagesList.innerHTML = "";
-  array.forEach((message) => {
-    let messagenow = document.createElement("div");
-    messagenow.innerHTML = `
-  <div class="message">
-  <div class="profile-photo">
-      <img src=${message.url}>
-      ${message.active ? '<div class="active"></div>' : ""}
-  </div>
-  <div class="message-body">
-  <h5>${message.name}</h5>
-      <p class=${message.read ? "text-muted" : "text-bold"}>${message.text}</p>
-      </div>
-      </div>`;
-    messagesList.appendChild(messagenow);
-  });
-}
-searchMessage.addEventListener("keyup", (e) => {
-  let value = searchMessage.value;
-  let FiltredMessages = messages.filter((message) => {
-    let name = message.name.toLocaleLowerCase();
-    if (name.includes(value)) {
-      console.log();
-      return message;
-    }
-  });
-  Loadmessage(FiltredMessages);
 });
