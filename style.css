@@ -10,6 +10,7 @@
   --color-danger: #fb5151;
   --color-dark: #241e38;
   --color-black: #151221;
+  --color-Theme: #151221;
 
   --border-raduis: 2rem;
   --card-border-raduis: 1rem;
@@ -104,6 +105,9 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+nav .container h2 {
+  color: var(--color-primary);
 }
 
 .search-bar {
@@ -550,11 +554,12 @@ main .container .left .profile {
   overflow-y: hidden;
 }
 .customize-theme .card {
-  background: var(--color-white);
+  background: var(--color-light);
   padding: 3rem;
   border-radius: var(--card-border-raduis);
   width: 50%;
   position: relative;
+  color: var(--color-Theme);
 }
 
 /* --------------------- font-size*/
@@ -614,19 +619,19 @@ main .container .left .profile {
 }
 
 .choose-color > span:first-child {
-  background: hsl(252, 75%, 60%);
+  background: #6b4ce6;
 }
 .choose-color > span:nth-child(2) {
-  background: hsl(52, 75%, 60%);
+  background: #e6d14c;
 }
 .choose-color > span:nth-child(3) {
-  background: hsl(352, 75%, 60%);
+  background: #e64c61;
 }
 .choose-color > span:nth-child(4) {
-  background: hsl(152, 75%, 60%);
+  background: #4ce69e;
 }
 .choose-color span:last-child {
-  background: hsl(197, 75%, 60%);
+  background: #4cbae6;
 }
 
 /* --------------------- background*/
@@ -656,15 +661,15 @@ main .container .left .profile {
   border: 2px solid var(--color-success);
 }
 .bg-1 {
-  background: white;
+  background: #ffffff;
   color: black;
 }
 .bg-2 {
-  background: hsl(252, 30%, 17%);
+  background: #241e38;
   color: white;
 }
 .bg-3 {
-  background: hsl(252, 30%, 10%);
+  background: #151221;
   color: white;
 }
 .choose-bg span {

@@ -11,6 +11,7 @@ let theme = document.getElementById("theme");
 let customizeTheme = document.querySelector(".customize-theme");
 let fontSize = document.querySelectorAll(".choose-size span");
 let chooseColor = document.querySelectorAll(".choose-color span");
+let chooseBg = document.querySelectorAll(".choose-bg div");
 let cancel = document.querySelector(".cancel");
 let root = document.querySelector(":root");
 
@@ -138,6 +139,7 @@ searchMessage.addEventListener("keyup", (e) => {
 });
 window.addEventListener("DOMContentLoaded", () => {
   Loadmessage(messages);
+  document.querySelector("html").style.fontSize = "16px";
 });
 /* ================================= customize-theme  ================================= */
 theme.addEventListener("click", () => {
@@ -184,19 +186,36 @@ fontSize.forEach((size) => {
 
 /* --------------chooseColor -------------- */
 chooseColor.forEach((size) => {
-  let fontColor;
   size.addEventListener("click", () => {
     changeActive(chooseColor);
-    if (size.classList.contains("font-size-1")) {
-      root.style.setProperty(" --color-primary", "#6b4ce6");
-    } else if (size.classList.contains("font-size-2")) {
-      root.style.setProperty(" --color-primary", "#e6d14c");
-    } else if (size.classList.contains("font-size-3")) {
-      root.style.setProperty(" --color-primary", "#e64c61");
-    } else if (size.classList.contains("font-size-4")) {
-      root.style.setProperty(" --color-primary", "-5rem");
+    if (size.classList.contains("color-1")) {
+      root.style.setProperty("--color-primary", "#6b4ce6");
+    } else if (size.classList.contains("color-2")) {
+      root.style.setProperty("--color-primary", "#e6d14c");
+    } else if (size.classList.contains("color-3")) {
+      root.style.setProperty("--color-primary", "#e64c61");
+    } else if (size.classList.contains("color-4")) {
+      root.style.setProperty("--color-primary", "#4ce69e");
     } else {
-      root.style.setProperty(" --color-primary", "-10rem");
+      root.style.setProperty("--color-primary", "#4cbae6");
+    }
+    size.classList.add("active");
+  });
+});
+
+/* --------------chooseBg -------------- */
+chooseBg.forEach((size) => {
+  size.addEventListener("click", () => {
+    changeActive(chooseBg);
+    if (size.classList.contains("bg-1")) {
+      root.style.setProperty("--color-light", "#f0eef6");
+      root.style.setProperty("--color-Theme", "#151221");
+    } else if (size.classList.contains("bg-2")) {
+      root.style.setProperty("--color-light", "#241e38");
+      root.style.setProperty("--color-Theme", "#ffffff");
+    } else if (size.classList.contains("bg-3")) {
+      root.style.setProperty("--color-light", "#151221");
+      root.style.setProperty("--color-Theme", "#f0eef6");
     }
     size.classList.add("active");
   });
