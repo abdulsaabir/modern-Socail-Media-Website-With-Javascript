@@ -9,6 +9,8 @@ let messagesnotification = document.getElementById("message-notification");
 let messagesbox = document.querySelector(".messages");
 let theme = document.getElementById("theme");
 let customizeTheme = document.querySelector(".customize-theme");
+let fontSize = document.querySelectorAll(".choose-size span");
+let chooseColor = document.querySelectorAll(".choose-color span");
 
 // stories array
 let backgroundArray = [
@@ -62,19 +64,18 @@ let messages = [
 ];
 
 // remove active all the sidebar
-function changeActive() {
-  menuItems.forEach((item) => {
+function changeActive(array) {
+  array.forEach((item) => {
     item.classList.remove("active");
   });
 }
 
 menuItems.forEach((item) => {
   item.addEventListener("click", () => {
-    changeActive();
+    changeActive(menuItems);
     item.classList.add("active");
     // if the item clicked isn't notification hide notification if was opne
     if (item.id != "notifications") {
-      console.log("i am in");
       document.querySelector(".notifications-popup").style.display = "none";
       document.querySelector(".notification-count").style.display = "block";
     } else {
@@ -140,4 +141,12 @@ window.addEventListener("DOMContentLoaded", () => {
 theme.addEventListener("click", () => {
   customizeTheme.style.display = "grid";
   document.body.classList.add("show");
+});
+
+/* --------------fontSize -------------- */
+fontSize.forEach((size) => {
+  size.addEventListener("click", () => {
+    changeActive(fontSize);
+    size.classList.add("active");
+  });
 });
