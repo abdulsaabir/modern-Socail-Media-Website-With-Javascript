@@ -56,11 +56,20 @@ ul {
   list-style: none;
 }
 .btn {
+  display: inline-block;
   padding: var(--btn-padding);
+  font-weight: 500;
   border-radius: var(--border-raduis);
+  cursor: pointer;
+  transition: 300ms ease;
+  font-size: 0.9rem;
 }
 .btn-primary {
   background: var(--color-primary);
+  color: var(--color-white);
+}
+.btn:hover {
+  opacity: 0.8;
 }
 .container {
   width: 80%;
@@ -79,8 +88,12 @@ img {
 }
 /* ============================= Header =============================*/
 header {
-  height: 9vh;
+  width: 100%;
   background: var(--color-white);
+  padding: 0.7rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 header .container {
   display: flex;
@@ -90,4 +103,28 @@ header .container {
 }
 .profile {
   display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.logo h3 {
+  font-weight: 800;
+  color: var(--color-primary);
+  font-family: Poppins;
+  font-size: 1.7rem;
+}
+.search-bar {
+  padding: var(--search-padding);
+  background: var(--color-light);
+  border-radius: var(--search-padding);
+  width: 40vw;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+.search-bar input::placeholder {
+  color: var(--color-black);
 }
