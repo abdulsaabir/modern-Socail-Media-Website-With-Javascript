@@ -86,6 +86,12 @@ img {
   width: 100%;
   display: block;
 }
+.text-bold {
+  font-weight: 500;
+}
+.text-muted {
+  color: var(--color-gray);
+}
 /* ============================= Header =============================*/
 header {
   width: 100%;
@@ -115,16 +121,17 @@ header .container {
 .search-bar {
   padding: var(--search-padding);
   background: var(--color-light);
-  border-radius: var(--search-padding);
-  width: 40vw;
+  border-radius: var(--border-raduis);
 }
 .search-bar input {
+  width: 35vw;
   background: transparent;
   border: none;
   outline: none;
   color: var(--color-dark);
-  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: 1rem;
 }
 .search-bar input::placeholder {
-  color: var(--color-black);
+  color: var(--color-dark);
 }
