@@ -204,18 +204,33 @@ chooseColor.forEach((size) => {
 });
 
 /* --------------chooseBg -------------- */
+function changeBG() {
+  root.style.setProperty("--dark-color-lightnes", darkColorLightnes);
+  root.style.setProperty("--light-color-lightnes", lightColorLightnes);
+  root.style.setProperty(" --white-color-lightnes", WhiteColorLightnes);
+}
+let lightColorLightnes;
+let WhiteColorLightnes;
+let darkColorLightnes;
 chooseBg.forEach((size) => {
   size.addEventListener("click", () => {
     changeActive(chooseBg);
     if (size.classList.contains("bg-1")) {
-      root.style.setProperty("--color-light", "#f0eef6");
-      root.style.setProperty("--color-Theme", "#151221");
+      lightColorLightnes = "95%";
+      WhiteColorLightnes = "100%";
+      darkColorLightnes = "17%";
+      changeBG();
     } else if (size.classList.contains("bg-2")) {
-      root.style.setProperty("--color-light", "#241e38");
-      root.style.setProperty("--color-Theme", "#ffffff");
+      console.log(4546);
+      lightColorLightnes = "35%";
+      WhiteColorLightnes = "25%";
+      darkColorLightnes = "80%";
+      changeBG();
     } else if (size.classList.contains("bg-3")) {
-      root.style.setProperty("--color-light", "#151221");
-      root.style.setProperty("--color-Theme", "#f0eef6");
+      lightColorLightnes = "-5%";
+      WhiteColorLightnes = "10%";
+      darkColorLightnes = "100%";
+      changeBG();
     }
     size.classList.add("active");
   });
