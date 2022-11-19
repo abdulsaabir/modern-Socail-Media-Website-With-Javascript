@@ -135,3 +135,23 @@ header .container {
 .search-bar input::placeholder {
   color: var(--color-dark);
 }
+
+/* ============================= main =============================*/
+main {
+  padding: var(---sticky-top-left) 0;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 18vw auto 20vw;
+  gap: 2rem;
+}
+
+/* ============================= left=============================*/
+.left {
+  position: sticky;
+  left: 0;
+  /* top: var(---sticky-top-left); */
+}
+.container .profile {
+  background: pink;
+}
