@@ -49,3 +49,45 @@ body {
     
         styles
 */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  padding: var(--btn-padding);
+  border-radius: var(--border-raduis);
+}
+.btn-primary {
+  background: var(--color-primary);
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.profile-phot {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: violet;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* ============================= Header =============================*/
+header {
+  height: 9vh;
+  background: var(--color-white);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.profile {
+  display: flex;
+}
