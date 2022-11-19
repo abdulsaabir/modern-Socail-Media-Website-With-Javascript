@@ -75,7 +75,7 @@ ul {
   width: 80%;
   margin: 0 auto;
 }
-.profile-phot {
+.profile-photo {
   width: 2.7rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -107,7 +107,7 @@ header .container {
   align-items: center;
   height: 100%;
 }
-.profile {
+.create {
   display: flex;
   align-items: center;
   gap: 2rem;
